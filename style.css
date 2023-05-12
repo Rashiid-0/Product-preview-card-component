@@ -1,0 +1,119 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body {
+  min-height: 100vh;
+  font-family: "Fraunces", serif;
+  background-color: hsl(30, 38%, 92%);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+.card {
+  max-width: 665px;
+  background-color: white;
+  border-radius: 10px;
+  display: flex;
+  margin: 0 1rem;
+}
+.img-container {
+  width: 50%;
+}
+.img-container img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  border-top-left-radius: 10px;
+  border-bottom-left-radius: 10px;
+}
+.text-container {
+  width: 50%;
+  padding: 2rem;
+}
+.text-container .name {
+  color: hsl(212, 21%, 14%);
+  padding-right: 2rem;
+  margin-bottom: 1.75rem;
+}
+.text-container .description {
+  font-family: "montserrat";
+  font-size: 14px;
+  color: hsl(228, 12%, 48%);
+  line-height: 20px;
+  margin-bottom: 1.75rem;
+}
+.montserrat {
+  font-family: "montserrat";
+  color: hsl(228, 12%, 48%);
+  letter-spacing: 3px;
+  font-size: 14px;
+  text-transform: uppercase;
+  margin-bottom: 1.75rem;
+}
+.price-container {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+  margin-bottom: 1.75rem;
+}
+.price-container .current-price {
+  color: hsl(158, 36%, 37%);
+}
+.price-container .old-price {
+  color: hsl(228, 12%, 48%);
+  font-family: "montserrat";
+  text-decoration: line-through;
+}
+.text-container .btn {
+  width: 100%;
+  border: 0;
+  outline: 0;
+  background-color: hsl(158, 36%, 37%);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 1rem;
+  padding: 1rem 2rem;
+  border-radius: 10px;
+  color: white;
+  cursor: pointer;
+}
+.btn:hover {
+  background-color: hsl(212, 21%, 14%);
+}
+@media (max-width: 550px) {
+  .card {
+    flex-direction: column;
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+  }
+  .img-container {
+    width: 100%;
+    height: 40%;
+  }
+  .img-container img {
+    content: url(images/image-product-mobile.jpg);
+  }
+  .text-container {
+    width: 100%;
+  }
+  .text-container .name {
+    padding-right: 0;
+  }
+  .img-container img {
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+    border-bottom-left-radius: 0;
+  }
+}
+.attribution {
+  margin-top: 20px;
+  font-size: 11px;
+  text-align: center;
+}
+.attribution a {
+  color: hsl(228, 45%, 44%);
+}
